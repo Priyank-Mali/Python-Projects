@@ -1,6 +1,8 @@
 """
 Guessing Game:
 """
+# import random
+# winNum = random.randint(1,20)
 winNum = 11
 attempt = 0
 while True:
