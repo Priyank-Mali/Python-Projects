@@ -60,5 +60,14 @@ if answer == "a":
     score = score + 1 
 else:
     print("Incorrect :(\n")
-print("You correct",score ,"answers out of 8 Question.")
-print("Your accuracy is:",(score/8)*100,'%')
+
+answer = input("def fun(*args):\nprint(type(args))?\nA. object\nB. list\nC. tuple\nD. string\n").lower()
+if answer == "c":
+    print("Correct :)\n")
+    score = score + 1 
+else:
+    print("Incorrect :(\n")
+
+
+print("You correct",score ,"answers out of 9 Question.")
+print("Your accuracy is:",(score/9)*100,'%')
