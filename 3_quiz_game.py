@@ -61,13 +61,20 @@ if answer == "a":
 else:
     print("Incorrect :(\n")
 
-answer = input("def fun(*args):\nprint(type(args))?\nA. object\nB. list\nC. tuple\nD. string\n").lower()
+answer = input("def fun(*args):\n    print(type(args))\nfun()?\nA. dictionary\nB. list\nC. tuple\nD. Error\n").lower()
 if answer == "c":
     print("Correct :)\n")
     score = score + 1 
 else:
     print("Incorrect :(\n")
 
+answer = input("def fun(*args):\n    print(type(*args))\nfun()?\nA. dictionary\nB. list\nC. tuple\nD. Error\n").lower()
+if answer == "d":
+    print("Correct :)\n")
+    score = score + 1 
+else:
+    print("Incorrect :(\n")
 
-print("You correct",score ,"answers out of 9 Question.")
-print("Your accuracy is:",(score/9)*100,'%')
+
+print("You correct",score ,"answers out of 10 Question.")
+print("Your accuracy is:",(score/10)*100,'%')
